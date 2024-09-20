@@ -9,7 +9,6 @@ const Home = () => {
         <title>Food Menu - Delicious Burgers and More</title>
         <meta name="description" content="Explore our delicious food menu featuring a variety of burgers and more." />
         <meta name="keywords" content="food, menu, burgers, restaurant" />
-
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Food Menu - Delicious Burgers and More" />
         <meta property="og:description" content="Explore our delicious food menu featuring a variety of burgers and more." />
