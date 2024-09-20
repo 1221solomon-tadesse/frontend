@@ -43,27 +43,58 @@ const Home = () => {
           })}
         </script>
       </Helmet>
-      <div className="font-sans p-4 mx-auto lg:max-w-5xl md:max-w-3xl sm:max-w-full">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="font-sans p-4 mx-auto lg:max-w-5xl md:max-w-3xl sm:max-w-full left-[210px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 "> 
           {/* Product Cards */}
-          {Array.from({ length: 9 }).map((_, index) => (
-            <div key={index} className="bg-white rounded overflow-hidden shadow-md cursor-pointer transition-all">
-              <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
-                <img src="https://th.bing.com/th/id/OIP.JnUimTk9WEG9Kz7RWBgmhwHaEu?w=260&h=180&c=7&r=0&o=5&pid=1.7" alt={`Product ${index + 1}`} className="h-full w-full object-cover object-top" />
-              </div>
-              <div className="p-4">
-                <h3 className="text-lg font-bold text-gray-800">Burger</h3>
-                <div className="mt-4 flex items-center flex-wrap gap-2">
-                  <h4 className="text-lg font-bold text-gray-800">$10</h4>
-                </div>
+          <div className="py-16"> {/* Added py-16 for padding */}
+            <div className="w-full aspect-w-5 aspect-h-80 lg:h-80 ">
+              <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt={`Product 1`} className="h-full w-full object-cover object-top" />
+            </div>
+            <div className="p-4">
+              <h3 className="text-lg font-bold text-gray-800">All I Need Is a Popsicle</h3>
+              <div className="mt-4 flex items-center flex-wrap gap-2">
+                <h4 className="text-lg font-bold text-gray-800">$10</h4>
               </div>
             </div>
-          ))}
+          </div>
+          <div className="py-16"> {/* Added py-16 for padding */}
+            <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
+              <img src="https://www.w3schools.com/w3images/steak.jpg" alt={`Product 2`} className="h-full w-full object-cover object-top" />
+            </div>
+            <div className="p-4">
+              <h3 className="text-lg font-bold text-gray-800">Salmon For Your Skin</h3>
+              <div className="mt-4 flex items-center flex-wrap gap-2">
+                <h4 className="text-lg font-bold text-gray-800">$10</h4>
+              </div>
+            </div>
+          </div>
+          <div className="py-16"> {/* Added py-16 for padding */}
+            <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
+              <img src="https://www.w3schools.com/w3images/cherries.jpg" alt={`Product 3`} className="h-full w-full object-cover object-top" />
+            </div>
+            <div className="p-4">
+              <h3 className="text-lg font-bold text-gray-800">The Perfect Sandwich, A Real Classic</h3>
+              <div className="mt-4 flex items-center flex-wrap gap-2">
+                <h4 className="text-lg font-bold text-gray-800">$10</h4>
+              </div>
+            </div>
+          </div>
+          <div className="py-16"> {/* Added py-16 for padding */}
+            <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
+              <img src="https://www.w3schools.com/w3images/wine.jpg" alt={`Product 4`} className="h-full w-full object-cover object-top" />
+            </div>
+            <div className="p-4">
+              <h3 className="text-lg font-bold text-gray-800">Le French</h3>
+              <div className="mt-4 flex items-center flex-wrap gap-2">
+                <h4 className="text-lg font-bold text-gray-800">$10</h4>
+              </div>
+            </div>
+          </div>
         </div>
         
         {/* About Section */}
-        <div id="about-section" className="mt-10 p-4 bg-gray-200 rounded shadow">
-        <div className="relative w-full h-80">
+        <div id="about-section" className="mt-10 p-4 ">
+        <div className="relative w-full h-100">
         <img
           src="https://th.bing.com/th/id/OIP.jipa3eXUgyKLStV_3ig4mgHaFP?w=204&h=180&c=7&r=0&o=5&pid=1.7"
           alt="About Us"
