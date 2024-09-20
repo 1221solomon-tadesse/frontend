@@ -61,7 +61,7 @@ const Navbar = () => {
       </div>
 
       {/* Navigation Links */}
-      <div className="hidden lg:flex">
+      <div >
         <NavLink className="flex items-center hover:bg-gray-700 p-2" to="/">
           <AiFillMail size={24} className="mr-2" />
           Mail
