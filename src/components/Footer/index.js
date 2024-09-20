@@ -20,7 +20,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div> */}
-            <p className='bg-gray-100 text-medium mt-[40px] w-screen'>© Copyrights by Etisha Garg. All rights reserved.</p>
+            <p className='bg-gray-100 text-medium mt-[40px] w-screen'>© Solomontadesse.</p>
         </div>
 
     )
