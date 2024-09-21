@@ -1,0 +1,44 @@
+import React from 'react';
+import data from '../../Data/data';
+
+function ProductCard() {
+  return (
+
+    <div>
+      <div className="flex flex-wrap gap-4 px-36 py-16 justify-between">
+        {data.map((item) => (
+          <div key={item.id} className="w-[250px]">
+            <div className="flex gap-7 flex-col align-middle items-center">
+              <img
+                src={item.url}
+                alt="Product 1"
+              />
+              <div className='text-center'>
+                <div className="text-2xl mt-3 mb-2">{item.name}</div>
+                <div className="font-light">{item.descroption}</div>
+              </div>
+
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className='flex font-medium justify-center'>
+
+        <div className='hover:bg-black px-3 hover:text-white'>{`<<`}</div>
+        <div className='hover:bg-slate-500 bg-black text-white px-3 hover:text-white'>1</div>
+        <div className='hover:bg-black px-3 hover:text-white'>2</div>
+        <div className='hover:bg-black px-3 hover:text-white'>3</div>
+        <div className='hover:bg-black px-3 hover:text-white'>4</div>
+        <div className='hover:bg-black px-3 hover:text-white'>5</div>
+        <div className='hover:bg-black px-3 hover:text-white'>6</div>
+        <div className='hover:bg-black px-3 hover:text-white'>{`>>`}</div>
+      </div>
+      <div className='px-32 py-8'>
+        <hr />
+      </div>
+
+    </div>
+  );
+}
+
+export default ProductCard;

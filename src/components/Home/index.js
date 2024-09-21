@@ -1,8 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import ProductCard from '../Global/productCard';
+import AboutUs from '../Global/aboutUs';
 
 const Home = () => {
-  return (   
+  return (
     <div>
       <Helmet>
         {/* Title and Description */}
@@ -16,14 +18,14 @@ const Home = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://burgermenu1234.netlify.app/" />
         <meta property="og:site_name" content="Soll restorant" />
-        
+
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Food Menu - Delicious Burgers and More" />
         <meta name="twitter:description" content="Explore our delicious food menu featuring a variety of burgers and more." />
         <meta name="twitter:image" content="https://th.bing.com/th/id/OIP.JnUimTk9WEG9Kz7RWBgmhwHaEu?w=260&h=180&c=7&r=0&o=5&pid=1.7" />
         <meta name="twitter:site" content="@myRestaurantHandle" />
-        
+
         {/* Structured Data (JSON-LD) for SEO */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -43,69 +45,9 @@ const Home = () => {
           })}
         </script>
       </Helmet>
-      <div className="font-sans p-4 mx-auto lg:max-w-5xl md:max-w-3xl sm:max-w-full left-[210px]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 "> 
-          {/* Product Cards */}
-          <div className="py-16"> {/* Added py-16 for padding */}
-            <div className="w-full aspect-w-5 aspect-h-80 lg:h-80 ">
-              <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt={`Product 1`} className="h-full w-full object-cover object-top" />
-            </div>
-            <div className="p-4">
-              <h3 className="text-lg font-bold text-gray-800">All I Need Is a Popsicle</h3>
-              <div className="mt-4 flex items-center flex-wrap gap-2">
-                <h4 className="text-lg font-bold text-gray-800">$10</h4>
-              </div>
-            </div>
-          </div>
-          <div className="py-16"> {/* Added py-16 for padding */}
-            <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
-              <img src="https://www.w3schools.com/w3images/steak.jpg" alt={`Product 2`} className="h-full w-full object-cover object-top" />
-            </div>
-            <div className="p-4">
-              <h3 className="text-lg font-bold text-gray-800">Salmon For Your Skin</h3>
-              <div className="mt-4 flex items-center flex-wrap gap-2">
-                <h4 className="text-lg font-bold text-gray-800">$10</h4>
-              </div>
-            </div>
-          </div>
-          <div className="py-16"> {/* Added py-16 for padding */}
-            <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
-              <img src="https://www.w3schools.com/w3images/cherries.jpg" alt={`Product 3`} className="h-full w-full object-cover object-top" />
-            </div>
-            <div className="p-4">
-              <h3 className="text-lg font-bold text-gray-800">The Perfect Sandwich, A Real Classic</h3>
-              <div className="mt-4 flex items-center flex-wrap gap-2">
-                <h4 className="text-lg font-bold text-gray-800">$10</h4>
-              </div>
-            </div>
-          </div>
-          <div className="py-16"> {/* Added py-16 for padding */}
-            <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
-              <img src="https://www.w3schools.com/w3images/wine.jpg" alt={`Product 4`} className="h-full w-full object-cover object-top" />
-            </div>
-            <div className="p-4">
-              <h3 className="text-lg font-bold text-gray-800">Le French</h3>
-              <div className="mt-4 flex items-center flex-wrap gap-2">
-                <h4 className="text-lg font-bold text-gray-800">$10</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        {/* About Section */}
-        <div id="about-section" className="mt-10 p-4 ">
-        <div className="relative w-full h-100">
-        <img
-          src="https://th.bing.com/th/id/OIP.jipa3eXUgyKLStV_3ig4mgHaFP?w=204&h=180&c=7&r=0&o=5&pid=1.7"
-          alt="About Us"
-          className="absolute inset-0 h-full w-full object-cover object-top"
-        />
-      </div>
-          <h2 className="text-2xl font-bold text-center mb-4">About Us</h2>
-          <p className="text-center">
-            Welcome to Soll Restaurant! We offer a variety of delicious burgers and other foods. Our mission is to provide a fantastic dining experience for all our customers.
-          </p>
-        </div>
+      <div>
+        <ProductCard />
+        <AboutUs />
       </div>
     </div>
   );
