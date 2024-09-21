@@ -37,7 +37,7 @@ const Footer = () => {
             <h3 className="font-light text-2xl mb-4">Popular Tags</h3>
             <div className="flex flex-wrap text-white">
               {["Travel", 'New York' ,'Dinner' ,'Salmon ','France' ,'Drinks' ,'Ideas' ,'Flavors' ,'Cuisine' ,'Chicken', 'Dressing' ,'Fried' ,'Fish' ,'Duck'].map(tag => (
-                <span key={tag} className={`bg-stone-700 text-xs px-3 py-1 mr-2 mb-1  ${tag==="Travle" ? "bg-black text-white ": "bg-gray-700 bold"}`}>
+                <span key={tag} className={`bg-stone-700 text-xs px-3 py-1 mr-2 mb-1  ${tag==="Travel" ? "bg-slate-950 text-white font-bold ": "bg-stone-500 gbold font-bold"}`}>
                   {tag}
                 </span>
               ))}
