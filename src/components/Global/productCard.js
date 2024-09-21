@@ -1,5 +1,10 @@
 import React from 'react';
 import data from '../../Data/data';
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
 
 function ProductCard() {
   return (
@@ -24,14 +29,14 @@ function ProductCard() {
       </div>
       <div className='flex font-medium justify-center'>
 
-        <div className='hover:bg-black px-3 hover:text-white'>{`<<`}</div>
-        <div className='hover:bg-slate-500 bg-black text-white px-3 hover:text-white'>1</div>
-        <div className='hover:bg-black px-3 hover:text-white'>2</div>
-        <div className='hover:bg-black px-3 hover:text-white'>3</div>
-        <div className='hover:bg-black px-3 hover:text-white'>4</div>
-        <div className='hover:bg-black px-3 hover:text-white'>5</div>
-        <div className='hover:bg-black px-3 hover:text-white'>6</div>
-        <div className='hover:bg-black px-3 hover:text-white'>{`>>`}</div>
+        <button onClick={handleScrollToTop} className='hover:bg-black px-3 hover:text-white'>{`<<`}</button>
+        <button onClick={handleScrollToTop}className='hover:bg-slate-500 bg-black text-white px-3 hover:text-white'>1</button>
+        <button onClick={handleScrollToTop}className='hover:bg-black px-3 hover:text-white'>2</button>
+        <button onClick={handleScrollToTop}className='hover:bg-black px-3 hover:text-white'>3</button>
+        <button onClick={handleScrollToTop}className='hover:bg-black px-3 hover:text-white'>4</button>
+        <button onClick={handleScrollToTop}className='hover:bg-black px-3 hover:text-white'>5</button>
+        <button onClick={handleScrollToTop}className='hover:bg-black px-3 hover:text-white'>6</button>
+        <button onClick={handleScrollToTop}className='hover:bg-black px-3 hover:text-white'>{`>>`}</button>
       </div>
       <div className='px-32 py-8'>
         <hr />
