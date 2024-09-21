@@ -28,13 +28,13 @@ const Navbar = () => {
 
 
       {/* Sidebar */}
-      <div className={`absolute py-5 w-1/4 top-0 h-screen bg-white transition-transform duration-300 ease-in-out z-40 shadow-lg ${isOpen ? 'translate-x-0' : '-translate-x-full w-1/4'} `}>
+      <div className={`absolute py-5 top-0 h-screen bg-white transition-transform duration-300 ease-in-out z-40 shadow-lg ${isOpen ? 'translate-x-0 max-md:w-1/2 md:w-1/4' : '-translate-x-full w-1/4'} `}>
 
         <a href="/" className="flex items-center sm:text-2xl hover:bg-slate-300 cursor-pointer p-4" to="home-section" smooth={true} duration={500} onClick={handleLinkClick}>
-          Home
+          Close Menu
         </a>
         <a href="#my-food" className="flex items-center sm:text-2xl hover:bg-slate-300 cursor-pointer p-4" to="myfood-section" smooth={true} duration={500} onClick={handleLinkClick}>
-          MyFood
+          Food
         </a>
         <a href="#about-us" className="flex items-center sm:text-2xl hover:bg-slate-300 cursor-pointer p-4" to="about-section" smooth={true} duration={500} onClick={handleLinkClick}>
           About

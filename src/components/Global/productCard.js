@@ -1,21 +1,14 @@
 import React from 'react';
 import data from '../../Data/data';
 
-  const handleScrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-     
-    });
-  };
-
 function ProductCard() {
   return (
 
     <div>
-      <div className="flex flex-wrap gap-4 px-36 py-16 justify-between">
+      <div className="flex flex-wrap gap-4 px-36 py-16 max-sm:px-10 max-sm:py-7 text-center justify-between">
         {data.map((item) => (
-          <div key={item.id} className="w-[250px]">
-            <div className="flex gap-7 flex-col align-middle items-center">
+          <div key={item.id} className="w-[300px] md:w-[250px] max-sm:m-auto">
+            <div className="flex gap-7 flex-col align-middle items-center mb-7">
               <img
                 src={item.url}
                 alt="Product 1"
@@ -31,12 +24,14 @@ function ProductCard() {
       </div>
       <div className='flex font-medium justify-center'>
 
-        <button onClick={handleScrollToTop} className='hover:bg-black px-3 hover:text-white'>{`<<`}</button>
-        <button onClick={handleScrollToTop} className='hover:bg-slate-500 bg-black text-white px-3 hover:text-white'>1</button>
-        <button onClick={handleScrollToTop} className='hover:bg-black px-3 hover:text-white'>2</button>
-        <button onClick={handleScrollToTop}  className='hover:bg-black px-3 hover:text-white'>3</button>
-        <button onClick={handleScrollToTop} className='hover:bg-black px-3 hover:text-white'>4</button>
-        <button onClick={handleScrollToTop} className='hover:bg-black px-3 hover:text-white'>{`>>`}</button>
+        <div className='hover:bg-black px-3 hover:text-white'>{`<<`}</div>
+        <div className='hover:bg-slate-500 bg-black text-white px-3 hover:text-white'>1</div>
+        <div className='hover:bg-black px-3 hover:text-white'>2</div>
+        <div className='hover:bg-black px-3 hover:text-white'>3</div>
+        <div className='hover:bg-black px-3 hover:text-white'>4</div>
+        <div className='hover:bg-black px-3 hover:text-white'>5</div>
+        <div className='hover:bg-black px-3 hover:text-white'>6</div>
+        <div className='hover:bg-black px-3 hover:text-white'>{`>>`}</div>
       </div>
       <div className='px-32 py-8'>
         <hr />
