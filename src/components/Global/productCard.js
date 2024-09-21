@@ -34,8 +34,6 @@ function ProductCard() {
         <button onClick={handleScrollToTop}className='hover:bg-black px-3 hover:text-white'>2</button>
         <button onClick={handleScrollToTop}className='hover:bg-black px-3 hover:text-white'>3</button>
         <button onClick={handleScrollToTop}className='hover:bg-black px-3 hover:text-white'>4</button>
-        <button onClick={handleScrollToTop}className='hover:bg-black px-3 hover:text-white'>5</button>
-        <button onClick={handleScrollToTop}className='hover:bg-black px-3 hover:text-white'>6</button>
         <button onClick={handleScrollToTop}className='hover:bg-black px-3 hover:text-white'>{`>>`}</button>
       </div>
       <div className='px-32 py-8'>
